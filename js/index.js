@@ -1,7 +1,8 @@
+import Games from './games.js';
+const games = new Games();
 
+window.games = games;
 
-import { getGamesByCategory } from './games.js';
-
-window.fn = {
-  getGamesByCategory,
+window.onload = () => {
+  games.getGames();
 };
